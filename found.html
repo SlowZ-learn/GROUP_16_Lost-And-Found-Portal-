@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Found Item</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="card">
+    <h3>Report Found Item</h3>
+
+    <input id="foundName" placeholder="Item name">
+    <input id="foundLocation" placeholder="Location">
+    <textarea id="foundDesc" placeholder="Description + Contact"></textarea>
+
+    <input type="file" id="foundImage" accept="image/*">
+    <img id="foundPreview" class="preview-img">
+
+    <button onclick="submitFound()">Submit</button>
+    <button onclick="goHome()">Back</button>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

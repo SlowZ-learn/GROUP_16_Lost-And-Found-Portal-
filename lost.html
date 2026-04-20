@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Lost Item</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="card">
+    <h3>Report Lost Item</h3>
+
+    <input id="lostName" placeholder="Item name">
+    <input id="lostLocation" placeholder="Location">
+    <textarea id="lostDesc" placeholder="Description + Contact"></textarea>
+
+    <input type="file" id="lostImage" accept="image/*">
+    <img id="lostPreview" class="preview-img">
+
+    <button onclick="submitLost()">Submit</button>
+    <button onclick="goHome()">Back</button>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

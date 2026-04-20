@@ -1,0 +1,116 @@
+/* ===== GLOBAL ===== */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background: #f4f4f4;
+}
+
+/* ===== HEADER ===== */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    background: #2c3e50;
+    color: white;
+}
+
+header a {
+    color: white;
+    margin-left: 10px;
+    text-decoration: none;
+}
+
+header button {
+    background: red;
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    cursor: pointer;
+}
+
+/* ===== HERO ===== */
+.hero {
+    text-align: center;
+    padding: 20px;
+}
+
+.hero input {
+    padding: 10px;
+    width: 60%;
+    max-width: 400px;
+}
+
+.hero button {
+    padding: 10px;
+    cursor: pointer;
+}
+
+/* ===== CARDS GRID ===== */
+.cards {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+    padding: 20px;
+}
+
+/* ===== CARD STYLE ===== */
+.card {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+/* ===== BUTTONS ===== */
+button {
+    padding: 10px;
+    margin-top: 10px;
+    cursor: pointer;
+    background: #27ae60;
+    color: white;
+    border: none;
+    border-radius: 5px;
+}
+
+/* ===== OUTPUT SECTION ===== */
+#output {
+    padding: 20px;
+}
+
+/* ===== TEXTAREA ===== */
+textarea {
+    width: 90%;
+    height: 100px;
+    margin: 10px 0;
+    padding: 10px;
+}
+
+/* ===== IMAGE PREVIEW ===== */
+.preview-img {
+    width: 100%;
+    max-width: 250px;
+    margin-top: 10px;
+    border-radius: 10px;
+}
+
+/* ===== AUTH (LOGIN / SIGNUP) ===== */
+.auth-page {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+}
+
+/* reused card style */
+.auth-card {
+    width: 300px;
+    text-align: center;
+}
+
+.auth-card input {
+    width: 100%;
+    padding: 10px;
+    margin: 8px 0;
+}

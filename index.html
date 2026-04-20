@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Home</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <h2>Lost & Found</h2>
+    <div>
+        <span id="welcomeText"></span>
+        <a href="myposts.html">My Posts</a>
+        <button onclick="logout()">Logout</button>
+    </div>
+</header>
+
+<section class="hero">
+    <input id="searchInput" placeholder="Search items...">
+    <button onclick="searchItems()">Search</button>
+</section>
+
+<section class="cards">
+
+    <div class="card">
+        <h3>Lost Item</h3>
+        <a href="lost.html"><button>Add</button></a>
+    </div>
+
+    <div class="card">
+        <h3>Found Item</h3>
+        <a href="found.html"><button>Add</button></a>
+    </div>
+
+</section>
+
+<script src="script.js"></script>
+</body>
+</html>
