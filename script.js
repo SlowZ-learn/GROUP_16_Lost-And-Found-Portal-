@@ -1,11 +1,10 @@
-//STORAGE 
 let users = JSON.parse(localStorage.getItem("users")) || [];
 let lostItems = JSON.parse(localStorage.getItem("lostItems")) || [];
 let foundItems = JSON.parse(localStorage.getItem("foundItems")) || [];
 let currentUser = localStorage.getItem("currentUser");
 
 
-// AUTH 
+ 
 function signup() {
     let u = document.getElementById("newUsername").value;
     let e = document.getElementById("newEmail").value;
@@ -36,7 +35,7 @@ function logout() {
 }
 
 
-// IMAGE FUNCTION 
+
 function readImage(inputId, previewId, callback) {
     let file = document.getElementById(inputId).files[0];
     if (!file) return callback("");
@@ -52,7 +51,7 @@ function readImage(inputId, previewId, callback) {
 }
 
 
-//  LOST 
+ 
 function submitLost() {
     readImage("lostImage", "lostPreview", function(img) {
 
@@ -72,7 +71,7 @@ function submitLost() {
 }
 
 
-//  FOUND 
+ 
 function submitFound() {
     readImage("foundImage", "foundPreview", function(img) {
 
@@ -92,7 +91,7 @@ function submitFound() {
 }
 
 
-// DISPLAY 
+ 
 function display(items) {
     let out = document.getElementById("output");
     if (!out) return;
@@ -109,7 +108,7 @@ function display(items) {
 }
 
 
-// SEARCH 
+ 
 function searchItems() {
     let k = searchInput.value.toLowerCase();
     localStorage.setItem("searchKeyword", k);
@@ -117,7 +116,7 @@ function searchItems() {
 }
 
 
-// PAGE LOGIC 
+
 if (location.href.includes("myposts")) {
     display([...lostItems, ...foundItems].filter(i => i.user === currentUser));
 }
@@ -128,12 +127,12 @@ if (location.href.includes("search")) {
 }
 
 
-// NAV 
+ 
 function goHome() {
     window.location.href = "index.html";
 }
 
 
-// WELCOME 
+ 
 let w = document.getElementById("welcomeText");
 if (w) w.innerText = "Welcome, " + currentUser;
